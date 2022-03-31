@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Forms</title>
+<!-- note that case matters for the link to the CSS file. 
+ --- make sure the case of your file names and directories match. -->
+ <link rel="stylesheet"  href="css/form.css" />  
+
+<!-- allow html5 to run in older versions of IE -->   
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+<form action="" method="post" id="proposal2020">
+
+<div id="formcol1">
+
+
+ <p>2020 Proposal Form</p>
+ <p>Speaker Info</p>
+ <ul>
+	<li>
+        <span>First Name:</span>
+        <input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" />
+    </li>
+
+
+ 	<li><span>Last Name:</span>
+        <input id="lstname1" name="lstname1" type="text" class="reqfield"  />
+</li>
+<li>
+	<span>Title:</span>
+	<input id="spkrtitle1" name="spkrtitle1" type="text" maxlength="48" />
+</li>
+<li>
+	<span>Company:</span>
+	<input id="company1" name="company1" type="text" />
+</li>
+<li>
+	<span>Department:</span>
+	<input id="department1" name="department1" type="text"  />
+</li>
+<li>
+	<span>Address:</span>
+	<input id="address1" class="reqfield" name="address1" type="text" />
+</li>
+</ul>
+
+</div> <!-- end of formcol1 div -->
+    <div id="multchoice">
+    
+    <p>Type of Presentation</p>
+    
+        <p><span>Lecture:</span>	<span><input value="1" id="TypeofPres_lec" name="p-type" type="radio" /> 
+        </span>
+           <span>Computer Lab:</span>	<span>
+           <input value="2" id="TypeofPres_lab" name="p-type" type="radio"  /></span></p>
+           
+ 	<p class="submit-button">    
+<input type="submit" value="Submit your proposal" /></p>
+    </div> <!-- end of multchoice div -->
+
+
+</form>
+
+	
+</div> <!-- end wrapper div -->
+</body>
+</html>
