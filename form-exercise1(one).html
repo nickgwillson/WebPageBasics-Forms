@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Forms</title>
+<title>Proposal forms</title>
 <!-- note that case matters for the link to the CSS file. 
  --- make sure the case of your file names and directories match. -->
  <link rel="stylesheet"  href="css/form.css" />  
@@ -22,8 +22,9 @@
 <div id="formcol1">
 
 
- <p>2020 Proposal Form</p>
- <p>Speaker Info</p>
+ <h1>2020 Proposal Form</h1>
+<fieldset>
+ <legend>Speaker Info</legend>
  <ul>
 	<li>
         <span>First Name:</span>
@@ -51,17 +52,19 @@
 	<input id="address1" class="reqfield" name="address1" type="text" />
 </li>
 </ul>
+	</fieldset>
 
 </div> <!-- end of formcol1 div -->
     <div id="multchoice">
     
-    <p>Type of Presentation</p>
+	    <fieldset>
+    <legend>Type of Presentation</legend>
     
         <p><span>Lecture:</span>	<span><input value="1" id="TypeofPres_lec" name="p-type" type="radio" /> 
         </span>
            <span>Computer Lab:</span>	<span>
            <input value="2" id="TypeofPres_lab" name="p-type" type="radio"  /></span></p>
-           
+	    </fieldset>
  	<p class="submit-button">    
 <input type="submit" value="Submit your proposal" /></p>
     </div> <!-- end of multchoice div -->
