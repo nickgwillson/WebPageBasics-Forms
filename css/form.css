@@ -3,6 +3,30 @@
 
 /* form styling */
 
+label {
+	margin-right: .3em;
+	width: 6.3em;  /* I made this deliberately wide – come up with your own optimal width */
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+    color: black;
+  text-align: right;
+  
+ 
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+color: #FFF !important; 
+background-color: #BB3D2F !important;
+}
+
+#formcol1 input.reqfield {
+	background: #d3d3d3;
+}
+
+
+#formcol1 li {   
+	list-style:none;
+}
+
 
 #wrapper {
 	width: 60%;
@@ -14,7 +38,42 @@ div#formcol1 {
 	width: 100%;
 }
 
+h2{
+  color: grey;
+  font-size:14px;
+     height:20px;
+      
+     }
+     
+h1{
+  color: white;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
 
+legend{
+  color: black;
+  font-weight: bold; 
+  
+}
+     
+body {
+  background-color: #cfddc2;
+  font-family: Garamond, serif;
+}
+
+  
+label[for="TypeofPres_lec"], label[for="TypeofPres_lab"]
+{
+text-align: left;
+}
+
+input[type="radio"] {
+  margin-right: 10;
+}
 
 /* end of form css */
 	
