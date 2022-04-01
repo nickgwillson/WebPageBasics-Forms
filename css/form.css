@@ -39,25 +39,20 @@ div#formcol1 {
 }
 
 h2{
-  color: grey;
+  color: black;
   font-size:14px;
      height:20px;
       
      }
      
 h1{
-  color: white;
-    text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+  color: black;
+   text-shadow: 2px 2px white;
 }
 
 legend{
   color: black;
   font-weight: bold; 
-  
 }
      
 body {
