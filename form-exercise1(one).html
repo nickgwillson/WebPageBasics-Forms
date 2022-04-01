@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <title>Proposal forms</title>
 <!-- note that case matters for the link to the CSS file. 
  --- make sure the case of your file names and directories match. -->
- <link rel="stylesheet"  href="css/form.css" />  
+  <link rel="stylesheet"  href="css/form.css" /> 
 
 <!-- allow html5 to run in older versions of IE -->   
 <!--[if lt IE 9]>
@@ -24,31 +24,34 @@
 
  <h1>2020 Proposal Form</h1>
 <fieldset>
+<h2>
+Fields marked with (*) are required when submitting a proposal
+</h2>
  <legend>Speaker Info</legend>
  <ul>
 	<li>
-        <label for="fstspkr1">First Name:</label>
+        <label for="fstspkr1">* First Name:</label>
         <input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" />
     </li>
 
 
- 	<li><label for="lstname1">Last Name:</label>
+ 	<li><label for="lstname1">* Last Name:</label>
         <input id="lstname1" name="lstname1" type="text" class="reqfield"  />
 </li>
 <li>
-	<span>Title:</span>
+	<label for="spkrtitle1">Title:</label>
 	<input id="spkrtitle1" name="spkrtitle1" type="text" maxlength="48" />
 </li>
 <li>
-	<span>Company:</span>
+	<label for="company1">Company:</label>
 	<input id="company1" name="company1" type="text" />
 </li>
 <li>
-	<span>Department:</span>
+	<label for="department1">Department:</label>
 	<input id="department1" name="department1" type="text"  />
 </li>
 <li>
-	<span>Address:</span>
+	<label for="address1">* Address:</label>
 	<input id="address1" class="reqfield" name="address1" type="text" />
 </li>
 </ul>
@@ -60,10 +63,19 @@
 	    <fieldset>
     <legend>Type of Presentation</legend>
     
-        <p><span>Lecture:</span>	<span><input value="1" id="TypeofPres_lec" name="p-type" type="radio" /> 
-        </span>
-           <span>Computer Lab:</span>	<span>
-           <input value="2" id="TypeofPres_lab" name="p-type" type="radio"  /></span></p>
+<p>
+  
+    <span>
+      <input value="1" id="TypeofPres_lec" name="p-type" 
+       type="radio"  /> <label for="TypeofPres_lec">Lecture</label>
+    </span>
+    <span>
+      <input value="2" id="TypeofPres_lab" name="p-type" type="radio"  />
+      <label for="TypeofPres_lab">Lab</label>
+      </span>
+     
+   </p>
+
 	    </fieldset>
  	<p class="submit-button">    
 <input type="submit" value="Submit your proposal" /></p>
